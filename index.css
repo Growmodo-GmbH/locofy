@@ -21,12 +21,21 @@
   object-fit: cover;
 }
 .frame-child {
-  position: relative;
-  width: 30px;
-  height: 30px;
+  position: absolute;
+  height: 50%;
+  width: 14.49%;
+  top: 25%;
+  right: 76.81%;
+  bottom: 25%;
+  left: 8.7%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
 }
 .bitcoin-ipsum {
-  position: relative;
+  position: absolute;
+  top: 15px;
+  left: 63px;
   line-height: 30px;
 }
 .group-parent {
@@ -40,18 +49,24 @@
   border-radius: var(--br-8xs);
   background-color: var(--neutral-white);
   box-shadow: -4px 4px 22px rgba(79, 79, 255, 0.16);
-  display: flex;
-  flex-direction: row;
-  padding: 0 var(--padding-lg);
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-mini);
 }
 .frame-item {
-  position: relative;
-  width: 23.7px;
-  height: 38.69px;
+  position: absolute;
+  height: 64.49%;
+  width: 11.23%;
+  top: 18.33%;
+  right: 80.24%;
+  bottom: 17.18%;
+  left: 8.53%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.etherium-ipsum {
+  position: absolute;
+  top: 15px;
+  left: 56px;
+  line-height: 30px;
 }
 .group-container {
   position: absolute;
@@ -64,14 +79,6 @@
   border-radius: var(--br-8xs);
   background-color: var(--neutral-white);
   box-shadow: -4px 4px 22px rgba(79, 79, 255, 0.16);
-  display: flex;
-  flex-direction: row;
-  padding: var(--padding-2xs) var(--padding-base) var(--padding-2xs)
-    var(--padding-lg);
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-sm);
 }
 .image-parent {
   position: absolute;
@@ -87,11 +94,9 @@
 }
 .home,
 .liquidity-token {
-  flex: 1;
   position: relative;
 }
 .home-parent {
-  flex: 1;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -106,29 +111,28 @@
   color: var(--color-gray);
   text-align: left;
 }
+.button1,
+.frame-parent,
+.liquidity-token-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
 .button1 {
   cursor: pointer;
   border: 0;
   padding: var(--padding-lgi) var(--padding-32xl);
   background-color: transparent;
-  flex: 1;
   border-radius: var(--br-21xl);
   background: linear-gradient(90deg, #ffb546, #ffe664);
   overflow: hidden;
-  display: flex;
-  flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between;
 }
 .frame-parent,
 .liquidity-token-parent {
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
 }
 .frame-parent {
-  flex: 1;
   gap: var(--gap-27xl);
   font-size: var(--headings-4-size);
   font-family: var(--headings-2);
@@ -137,7 +141,6 @@
   position: absolute;
   top: 0;
   left: 60px;
-  width: 1319px;
   gap: var(--gap-447xl);
 }
 .nav-menu,
@@ -156,18 +159,16 @@
   font-family: var(--font-open-sans);
 }
 .frame-inner {
-  flex: 1;
   position: relative;
   background-color: var(--neutral-white);
+  width: 120px;
   height: 3px;
 }
 .cryptocurrency {
-  flex: 1;
   position: relative;
   line-height: 18px;
 }
 .rectangle-parent {
-  align-self: stretch;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -178,21 +179,22 @@
   color: var(--neutral-white);
 }
 .crypto-exchanges-battle-container {
-  align-self: stretch;
   position: relative;
   font-size: var(--heading-1-size);
   letter-spacing: -0.01em;
   line-height: 80px;
+  display: inline-block;
+  width: 625px;
   color: var(--color-goldenrod);
 }
 .this-is-just {
-  align-self: stretch;
   position: relative;
   line-height: 30px;
   font-family: var(--body-texts-body-2);
+  display: inline-block;
+  width: 523px;
 }
 .frame-container {
-  align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -218,7 +220,6 @@
   border: 0;
   padding: var(--padding-lgi) var(--padding-32xl);
   background-color: var(--neutral-white);
-  align-self: stretch;
   border-radius: var(--br-21xl);
   overflow: hidden;
   flex-direction: row;
@@ -227,7 +228,6 @@
   position: absolute;
   top: 244px;
   left: 347px;
-  width: 625px;
   flex-direction: column;
   gap: 61px;
 }
@@ -245,19 +245,14 @@
   width: 1318px;
   height: 79px;
 }
-.liquidity-token1,
 .this-is-just1 {
-  align-self: stretch;
   position: relative;
-}
-.liquidity-token1 {
-  font-weight: 800;
-}
-.this-is-just1 {
   font-size: var(--headings-4-size);
   line-height: 30px;
   font-family: var(--body-texts-body-2);
   color: var(--color-darkslategray-100);
+  display: inline-block;
+  width: 345px;
 }
 .vector-icon,
 .vector-icon1,
@@ -276,23 +271,30 @@
 .liquidity-token-group,
 .vector-parent {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-11xl);
 }
-.vector-parent {
-  align-self: stretch;
-  flex-direction: row;
-}
 .liquidity-token-group {
-  flex: 1;
   flex-direction: column;
   text-align: left;
   font-size: var(--font-size-11xl);
   font-family: var(--font-open-sans);
 }
-.lorem-ipsum-group {
+.lorem-ipsum {
+  position: relative;
+  line-height: 30px;
+}
+.frame-div,
+.lorem-ipsum-group,
+.lorem-ipsum-parent {
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.lorem-ipsum-group {
   gap: var(--gap-lgi);
   text-align: left;
   font-size: var(--headings-4-size);
@@ -300,22 +302,13 @@
   font-family: var(--body-texts-body-2);
 }
 .frame-div,
-.lorem-ipsum-group,
 .lorem-ipsum-parent {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.lorem-ipsum-parent {
-  flex: 1;
-  flex-direction: column;
   gap: var(--gap-2xl);
 }
 .frame-div {
   position: absolute;
   top: 0;
   left: 58px;
-  width: 1305px;
   flex-direction: row;
   gap: var(--gap-94xl);
 }
@@ -360,16 +353,12 @@
   width: 53px;
   height: 3px;
 }
-.liquidity-token-lessons {
-  position: relative;
-  line-height: 18px;
-}
 .rectangle-group {
-  align-self: stretch;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: var(--gap-base);
   text-align: left;
 }
 .lessons {
@@ -377,27 +366,25 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.crypto-lessons1,
-.this-is-just2 {
-  align-self: stretch;
-  position: relative;
-}
 .crypto-lessons1 {
+  position: relative;
   font-size: var(--headings-2-size);
   line-height: 60px;
   text-transform: capitalize;
   color: var(--color-black);
 }
 .this-is-just2 {
+  position: relative;
   line-height: 30px;
   font-family: var(--body-texts-body-2);
   color: var(--color-darkslategray-100);
+  display: inline-block;
+  width: 631px;
 }
 .frame-parent1 {
   position: absolute;
   top: 0;
-  left: calc(50% - 468px);
-  width: 937px;
+  left: calc(50% - 315px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -573,6 +560,9 @@
   color: var(--neutral-white);
 }
 .frame-parent7 {
+  position: absolute;
+  top: 0;
+  left: 370px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -606,6 +596,9 @@
   width: 309px;
 }
 .frame-parent11 {
+  position: absolute;
+  top: 43px;
+  left: 26px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -613,24 +606,23 @@
   gap: var(--gap-mid);
 }
 .frame-child8 {
-  position: relative;
+  position: absolute;
+  top: 289px;
+  left: 0;
   border-radius: 0 0 var(--br-8xs) var(--br-8xs);
   background-color: var(--color-goldenrod);
   width: 360px;
   height: 5px;
 }
 .frame-parent10 {
+  position: relative;
   border-radius: var(--br-8xs);
   background-color: var(--neutral-white);
   box-shadow: -4px 4px 22px rgba(203, 203, 255, 0.16);
   width: 360px;
   height: 294px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  gap: var(--gap-18xl);
 }
+.frame-parent8,
 .frame-parent9 {
   display: flex;
   flex-direction: row;
@@ -638,14 +630,12 @@
   justify-content: flex-start;
   gap: var(--gap-12xl);
 }
-.frame-parent6,
 .frame-parent8 {
-  display: flex;
+  position: absolute;
+  top: 161px;
+  left: 0;
   flex-direction: column;
   align-items: center;
-}
-.frame-parent8 {
-  justify-content: flex-start;
   gap: var(--gap-11xl);
   text-align: center;
   font-size: var(--font-size-5xl);
@@ -657,8 +647,6 @@
   left: calc(50% - 566px);
   width: 1142px;
   height: 779px;
-  justify-content: center;
-  gap: 70px;
 }
 .cypto-features {
   position: absolute;
@@ -690,26 +678,12 @@
   display: inline-block;
   width: 480px;
 }
-.button11,
 .frame-parent24 {
   display: flex;
-  align-items: flex-start;
-}
-.frame-parent24 {
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
   gap: var(--gap-lgi);
-}
-.button11 {
-  cursor: pointer;
-  border: 0;
-  padding: var(--padding-lgi) var(--padding-32xl);
-  background-color: transparent;
-  border-radius: var(--br-21xl);
-  background: linear-gradient(90deg, #ffb546, #ffe664);
-  overflow: hidden;
-  flex-direction: row;
-  justify-content: flex-start;
 }
 .base,
 .frame-parent23 {
@@ -756,121 +730,126 @@
   font-size: var(--font-size-sm);
   color: var(--color-darkgray);
 }
-.btc-child {
-  position: relative;
-  width: 40px;
-  height: 40px;
+.bitcoin,
+.btc2 {
+  position: absolute;
+  left: 0;
 }
 .bitcoin {
-  position: relative;
-  font-size: var(--font-size-base);
+  top: 28px;
   letter-spacing: 0.01em;
-  color: var(--color-black);
 }
-.btc-parent,
-.btc1 {
-  width: 53px;
-  height: 47px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-9xs);
-}
-.btc1 {
-  width: 109px;
-  flex-direction: row;
-  align-items: center;
-  gap: var(--gap-base);
+.btc2 {
+  top: 0;
   font-size: var(--font-size-xl);
   color: var(--color-darkslateblue);
 }
+.bitcoin-parent,
+.btc-child,
+.btc1 {
+  position: absolute;
+  top: 0;
+  left: 56px;
+  width: 53px;
+  height: 47px;
+}
+.btc-child,
+.btc1 {
+  top: 3px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+}
+.btc1 {
+  top: 0;
+  width: 109px;
+  height: 47px;
+  color: var(--color-black);
+}
 .div,
 .frame-child20 {
-  position: relative;
+  position: absolute;
+  top: 14px;
+  left: 181px;
 }
 .frame-child20 {
+  top: 2px;
+  left: 0;
   width: 16px;
   height: 16px;
 }
-.btc,
+.div1,
 .group-parent7 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  left: 24px;
 }
 .group-parent7 {
+  top: 14px;
+  left: 302px;
   width: 69px;
   height: 19px;
-  gap: var(--gap-5xs);
   color: var(--color-mediumslateblue-100);
 }
-.btc {
+.div2 {
+  top: 14px;
+  left: 443px;
+}
+.btc,
+.div2,
+.eth1 {
   position: absolute;
+}
+.btc {
   top: 73px;
   left: 77px;
   width: 521px;
   height: 47px;
-  gap: 72px;
 }
-.ethereum {
-  position: relative;
-  font-size: var(--font-size-base);
-  letter-spacing: 0.01em;
-  color: var(--color-whitesmoke);
+.eth1 {
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-xl);
+  color: var(--neutral-white);
 }
-.eth-parent,
-.logoethereum-parent {
+.ethereum-parent {
+  position: absolute;
+  top: 0;
+  left: 56px;
   width: 74px;
   height: 47px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-9xs);
 }
-.logoethereum-parent {
+.logoethereum-icon {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+}
+.frame-parent26,
+.group-parent8 {
   position: absolute;
   top: 0;
   left: 0;
   width: 130px;
-  flex-direction: row;
-  align-items: center;
-  gap: var(--gap-base);
-  font-size: var(--font-size-xl);
-  color: var(--neutral-white);
+  height: 47px;
 }
-.div3 {
-  left: 181px;
-}
-.div3,
-.div5,
 .group-parent8 {
-  position: absolute;
   top: 14px;
-}
-.group-parent8 {
   left: 302px;
   width: 69px;
   height: 19px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-5xs);
   color: #ffe061;
 }
-.div5 {
-  left: 443px;
-}
+.eth,
 .frame-parent25 {
-  position: relative;
+  position: absolute;
+  top: 16px;
+  left: 40px;
   width: 518px;
   height: 47px;
 }
 .eth {
-  position: absolute;
   top: 144px;
   left: 0;
   border-radius: var(--br-base);
@@ -878,18 +857,7 @@
   box-shadow: 0 20px 80px rgba(54, 113, 233, 0.1);
   width: 610px;
   height: 79px;
-  display: flex;
-  flex-direction: column;
-  padding: 0 40px;
-  box-sizing: border-box;
-  align-items: flex-start;
-  justify-content: center;
   color: var(--color-whitesmoke);
-}
-.group-parent9,
-.ltc-parent {
-  display: flex;
-  justify-content: flex-start;
 }
 .group-parent9 {
   position: absolute;
@@ -897,18 +865,14 @@
   left: 302px;
   width: 72px;
   height: 19px;
-  flex-direction: row;
-  align-items: center;
-  gap: var(--gap-5xs);
   color: var(--color-mediumslateblue-100);
 }
-.ltc-parent {
+.litecoin-parent {
+  top: 0;
+  left: 56px;
   width: 61px;
-  height: 47px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--gap-9xs);
 }
+.litecoin-parent,
 .ltc,
 .ltc1,
 .table {
@@ -919,13 +883,7 @@
   top: 0;
   left: 0;
   width: 117px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-base);
-  font-size: var(--font-size-xl);
-  color: var(--color-darkslateblue);
+  color: var(--color-black);
 }
 .ltc,
 .table {
@@ -952,15 +910,32 @@
   width: 62.22px;
   height: 62.22px;
 }
-.crypto-exchange,
-.frame-child23 {
+.crypto-exchange {
   position: absolute;
   top: 4205px;
   left: 203px;
   width: 1178px;
   height: 456px;
 }
-.frame-child23 {
+.this-is-just14 {
+  position: relative;
+  line-height: 30px;
+  color: var(--color-darkslategray-100);
+  display: inline-block;
+  width: 429px;
+}
+.frame-parent27 {
+  position: absolute;
+  top: 0;
+  left: 734px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+}
+.frame-child24 {
+  position: absolute;
   top: 0;
   left: 0;
   border-radius: var(--br-base);
@@ -968,35 +943,40 @@
   width: 610px;
   height: 313px;
 }
-.btc3,
-.div9 {
-  position: absolute;
-  letter-spacing: 0.01em;
-  display: inline-block;
-  height: 17.88px;
-}
 .div9 {
   top: 12.62px;
   left: 477.48px;
+  letter-spacing: 0.01em;
   font-weight: 500;
   text-align: right;
   width: 48.38px;
+  height: 17.88px;
+}
+.bitcoin1,
+.btc3,
+.btc4,
+.div9 {
+  position: absolute;
+  display: inline-block;
 }
 .btc3 {
   top: 34.71px;
   left: 58.9px;
+  letter-spacing: 0.01em;
   color: var(--color-whitesmoke);
   width: 93.6px;
+  height: 17.88px;
 }
 .bitcoin1,
 .btc4 {
-  position: relative;
-  display: inline-block;
+  top: 0;
+  left: 0;
   width: 86.24px;
   height: 30.5px;
-  flex-shrink: 0;
 }
 .btc4 {
+  top: 5.26px;
+  left: 94.66px;
   font-size: var(--font-size-base);
   font-weight: 600;
   color: var(--color-darkslategray-200);
@@ -1004,27 +984,25 @@
   height: 19.98px;
   opacity: 0.7;
 }
-.bitcoin-parent {
+.bitcoin-group {
   position: absolute;
   top: 0;
   left: 58.9px;
   width: 129.36px;
   height: 30.5px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  gap: var(--gap-5xs);
   font-size: var(--font-size-5xl);
   color: var(--color-darkslateblue);
 }
-.frame-child24,
-.parent {
-  position: absolute;
+.frame-child25 {
   top: 0;
   left: 0;
   width: 42.07px;
   height: 42.07px;
+}
+.b,
+.frame-child25,
+.parent {
+  position: absolute;
 }
 .parent {
   top: 42.07px;
@@ -1033,34 +1011,32 @@
   height: 52.59px;
   color: var(--color-mediumslateblue-100);
 }
-.b,
-.price-in-dollar {
-  position: relative;
+.b {
+  top: 0;
+  left: 11.57px;
   letter-spacing: 0.01em;
   display: inline-block;
   width: 86.24px;
   height: 30.5px;
-  flex-shrink: 0;
+}
+.group,
+.price-in-dollar {
+  position: absolute;
+  width: 110.43px;
 }
 .price-in-dollar {
+  top: 34.71px;
+  left: 0;
   font-size: var(--font-size-base);
+  letter-spacing: 0.01em;
   color: var(--color-whitesmoke);
-  width: 110.43px;
+  display: inline-block;
   height: 19.98px;
 }
-.card-visits-per-day,
 .group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.group {
-  width: 110.43px;
+  top: 16.83px;
+  left: 33.66px;
   height: 54.69px;
-  padding: 0 0 0 0.00002104660597979091px;
-  box-sizing: border-box;
-  justify-content: flex-end;
-  gap: var(--gap-9xs);
 }
 .card-visits-per-day {
   position: absolute;
@@ -1071,11 +1047,10 @@
   box-shadow: 15px 20px 40px rgba(116, 117, 218, 0.15);
   width: 177.74px;
   height: 88.34px;
-  justify-content: center;
   text-align: center;
   font-size: var(--font-size-5xl);
 }
-.frame-child25 {
+.frame-child26 {
   position: absolute;
   top: 118.31px;
   left: 40.94px;
@@ -1083,49 +1058,49 @@
   height: 144.62px;
 }
 .increase-in-trade {
-  letter-spacing: 0.01em;
+  top: 25.24px;
+  left: 16.83px;
   line-height: 28px;
   font-weight: 600;
-  display: inline-block;
   width: 153.55px;
   height: 58.9px;
 }
-.arrow-up-icon,
 .b1,
-.increase-in-trade {
-  position: relative;
-  flex-shrink: 0;
-}
-.b1 {
+.increase-in-trade,
+.sell-option {
+  position: absolute;
   letter-spacing: 0.01em;
   display: inline-block;
+}
+.sell-option {
+  top: 148.29px;
+  left: 16.83px;
+  font-size: var(--font-size-base);
+  color: var(--color-whitesmoke);
+  width: 86.24px;
+  height: 19.98px;
+}
+.b1 {
+  top: 0;
+  left: 0;
   width: 70.47px;
   height: 30.5px;
 }
 .arrow-up-icon {
+  position: absolute;
+  top: 3.16px;
+  left: 77.83px;
   width: 25.24px;
   height: 25.24px;
   overflow: hidden;
 }
 .container {
+  position: absolute;
+  top: 100.97px;
+  left: 16.83px;
   width: 103.07px;
   height: 30.5px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 7px;
   font-size: var(--font-size-5xl);
-}
-.sell-option {
-  position: relative;
-  font-size: var(--font-size-base);
-  letter-spacing: 0.01em;
-  color: var(--color-whitesmoke);
-  display: inline-block;
-  width: 86.24px;
-  height: 19.98px;
-  flex-shrink: 0;
 }
 .card-bounce-rate {
   position: absolute;
@@ -1136,38 +1111,16 @@
   backdrop-filter: blur(250px);
   width: 187.21px;
   height: 193.52px;
-  display: flex;
-  flex-direction: column;
-  padding: 25.241378784179688px 16.827585220336914px 25.241376876831055px;
-  box-sizing: border-box;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-base);
   font-size: var(--font-size-xl);
 }
-.rectangle-parent2 {
-  position: relative;
+.rectangle-parent3 {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 610px;
   height: 421.52px;
-}
-.this-is-just14 {
-  position: relative;
-  line-height: 30px;
-  color: var(--color-darkslategray-100);
-  display: inline-block;
-  width: 429px;
-}
-.frame-parent26,
-.liquidity-token-section {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.frame-parent26 {
-  flex-direction: column;
-  gap: var(--gap-21xl);
-  font-size: var(--headings-4-size);
-  color: var(--color-goldenrod);
+  font-size: var(--font-size-sm);
+  color: var(--neutral-white);
 }
 .liquidity-token-section {
   position: absolute;
@@ -1175,10 +1128,6 @@
   left: 157px;
   width: 1187px;
   height: 421.52px;
-  flex-direction: row;
-  gap: 124px;
-  font-size: var(--font-size-sm);
-  color: var(--neutral-white);
 }
 .grow-your-profit-child {
   position: absolute;
@@ -1199,13 +1148,6 @@
   border-radius: var(--br-8xs);
   background-color: var(--neutral-white);
   box-shadow: -4px 4px 22px rgba(79, 79, 255, 0.16);
-  display: flex;
-  flex-direction: row;
-  padding: 0 var(--padding-lg);
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-mini);
 }
 .group-parent11 {
   width: 26.08%;
@@ -1213,9 +1155,6 @@
   right: 63.41%;
   bottom: 66.91%;
   left: 10.51%;
-  padding: var(--padding-2xs) var(--padding-base) var(--padding-2xs)
-    var(--padding-lg);
-  gap: var(--gap-sm);
 }
 .img {
   position: absolute;
@@ -1234,26 +1173,14 @@
   width: 128px;
   height: 3px;
 }
-.button21,
-.copy {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.button21 {
-  cursor: pointer;
-  border: 0;
-  padding: var(--padding-lgi) var(--padding-32xl);
-  background-color: var(--neutral-white);
-  border-radius: var(--br-21xl);
-  overflow: hidden;
-  flex-direction: row;
-}
 .copy {
   position: absolute;
   top: 43px;
   left: 0;
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: var(--gap-21xl);
   text-align: left;
   color: var(--neutral-white);
@@ -1287,7 +1214,7 @@
   text-align: center;
   color: var(--color-black);
 }
-.frame-parent29 {
+.frame-parent30 {
   position: absolute;
   top: 0;
   left: calc(50% - 153.03px);
@@ -1373,7 +1300,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: var(--gap-5xs);
+  gap: 8px;
 }
 .reviews {
   position: absolute;
@@ -1405,7 +1332,7 @@
   display: inline-block;
   width: 598px;
 }
-.frame-parent30 {
+.frame-parent31 {
   position: absolute;
   top: 261px;
   left: 572px;
