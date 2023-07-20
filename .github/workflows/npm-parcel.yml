@@ -42,7 +42,7 @@ jobs:
         uses: actions/upload-artifact@v3.1.2
         with:
           # Upload entire repository
-          path: './dist'
+          path: './build'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
